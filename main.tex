@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Mitch}{Morehart}{ \urlstyle{same}\url{https://www.linkedin.com/in/morehart} \\
+\href{mailto:55mitch@comcast.net}{55mitch@comcast.net} | 703.625.0972
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 35,000 lines:}
+ SAS \textbullet{} JavaScript \textbullet{}\\ R/S-Plus \textbullet{} \LaTeX\ \\ 
+\location{Over 5000 lines:}
+ HTML \textbullet{} CSS \textbullet{} PHP \\
+\location{Familiar:}
+ MySQL \textbullet{} Java \textbullet{} C++
+\sectionsep 
+
+\subsection{Software}
+MS Excel, Word, and Power Point\\
+ArcGis \textbullet{} MS SQL Server\\
+Google Drive \textbullet{} GitHub
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rl}
+2014	     & USDA Secretary's Award\\
+2013	     & USDA, Fred Woods Award\\
+2013	     & ERS Helios Award\\  
+2012	     & AAEA Best Article\\
+2011	     & ERS Helios Award\\  
+2009	     & ERS Helios Award\\  
+2006         & USDA Secretary's Award\\
+2005	     & ERS Helios Award\\
+2004         & USDA Secretary's Award\\
+2002         & USDA Secretary's Award\\
+\end{tabular}
+{\footnotesize 1991-2014, Certificate of Merit\\
+72 Awards, \$134,000.}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Training
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Training}
+{\footnotesize 
+\begin{tabular}{rl}
+2013	     & USDA Scientific Integrity Policy \\
+2013	     & Information Security Awareness\\
+2012         & Civil Rights Training for Managers\\
+2011         & NARA Records Management\\
+2010         & Ethics: Political Activity\\
+2010         & Post-Employment Restrictions\\
+2009		 & Sensitive Data Certification\\
+2008         & Extramural Agreements Training\\
+2008         & Civil Rights Training\\
+
+\end{tabular}
+}
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Penn State University}
+\descript{PhD Research Assistant Agricultural Economics}
+\location{June 1983--May 1985}
+\sectionsep
+
+
+\subsection{Rutgers University}
+\descript{MS Agricultural Economics}
+\location{August 1981--May 1983}
+\sectionsep
+
+\subsection{University of Delaware}
+\descript{BS Agricultural Economics}
+\location{August 1977--May 1981}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Economic Research Service | Washington, DC}
+
+\descript{Team Leader }
+\location{July 2012 – present }
+\textit{Responsible for modernizing the preparation and delivery of annual estimates and periodic forecasts of farm income and wealth measures.}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Reconfigured input and output structure to take advantage of relational database technologies (SQL Server, MongoDB, GitHub, etc.).
+\item Realized efficiency gains resulted in a reduction of the team required to manage and prepare the data product releases from 12 to 4 members.
+\end{tightemize}
+\sectionsep
+
+
+\descript{Deputy Director for Data and Staff Analysis }
+\location{October 2010 – June 2012}
+\textit{Responsible for management of research data including the annual Agricultural Resource Management Survey (ARMS).}
+\begin{tightemize}
+\item Coordinated timely responses to over 600 requests for data, research, or analysis from external customers.
+\item Formulated ERS policy for data quality standards and chaired the Data Product Review Council.
+\item Renegotiated contracts to reduce ARMS costs by \$4 million over a 5-year agreement.
+\end{tightemize}
+\sectionsep
+
+
+\descript{Senior Economist, GS-15}
+\location{Jan 1996 – September 2010}
+\textit{Responsible for planning, organizing, and completing studies that
+assessed the financial performance of farm businesses.  Conducted research that examined
+determinants of farmland values, credit use, technology adoption, and factors that distinguish the management and performance of farm businesses. Authoritative spokesperson on the financial condition of agriculture; consulting directly with the USDA Chief Economist, the Federal Reserve Bank, and Congress.}
+\begin{tightemize}
+\item Authored more than 80 publications.
+\item Wrote and delivered over 120 presentations.
+\item Completed more than 140 short-term staff analyses.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Recent Publications/Presentations}
+\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\footnotesize
+\setlength{\itemsep}{0pt}
+\bibliography{recent}
+\nocite{*}
+%\vspace{-5mm}
+{\footnotesize Note: [\%]indicates my contribution for multiple authored publications.}	
+\end{minipage} 
+\end{document}  \documentclass[]{article}
